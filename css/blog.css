@@ -590,3 +590,95 @@ main {
     line-height: 32px;
   }
 }
+.posts {
+  padding-bottom: 128px;
+}
+.posts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.posts__title {
+  color: #161722;
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+  margin-bottom: 64px;
+}
+.posts__cards {
+  width: 100%;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.posts__card {
+  background-color: #fff;
+  padding: 48px 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 16px solid transparent;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.posts__card:hover {
+  border-bottom: 16px solid #ffd2a4;
+}
+.posts__card-text {
+  color: #ffd2a4;
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 8%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.posts__card-title {
+  color: rgb(22, 23, 34);
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.posts__card-desc {
+  color: rgb(22, 23, 34);
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  letter-spacing: 0%;
+  line-height: 24px;
+  margin-bottom: 48px;
+}
+
+@media only screen and (max-width: 1065px) {
+  .posts__cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 860px) {
+  .posts__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 540px) {
+  .posts__cards {
+    grid-template-columns: 1fr;
+  }
+}

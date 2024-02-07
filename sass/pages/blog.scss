@@ -3,11 +3,11 @@
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as avr;
 
-main{
+main {
     background: rgb(229, 229, 229);
 }
 
-.blog {  
+.blog {
     margin-top: 80px;
     padding: 128px 0;
 
@@ -78,38 +78,39 @@ main{
     }
 }
 
-@media only screen and (max-width:1065px){
-    .blog{
+@media only screen and (max-width:1065px) {
+    .blog {
 
-        padding: 60px 0 ;
+        padding: 60px 0;
 
-        &__wrapper{
+        &__wrapper {
             flex-direction: column;
             align-items: center;
 
-            &-img{
+            &-img {
                 order: 2;
                 width: 100%;
                 object-fit: cover;
             }
 
-            &-right{
+            &-right {
                 text-align: center;
             }
         }
     }
 }
-@media only screen and (max-width:650px){
-    .blog{
 
-        &__title{
+@media only screen and (max-width:650px) {
+    .blog {
+
+        &__title {
             font-size: 32px;
             margin-bottom: 38px;
         }
 
-        &__wrapper{
+        &__wrapper {
 
-            &-title{
+            &-title {
                 font-size: 24px;
                 line-height: 32px;
             }
@@ -117,6 +118,102 @@ main{
     }
 }
 
-// .posts{
+.posts {
+    padding-bottom: 128px;
+   
 
-// }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        color: avr.$secondary-color;
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -1%;
+        text-transform: uppercase;
+        margin-bottom: 64px;
+    }
+
+    &__cards {
+        width: 100%;
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__card {
+        background-color: #fff;
+        padding: 48px 32px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 16px solid transparent;
+        transition: all 0.5s;
+
+        &:hover{
+            border-bottom: 16px solid avr.$primary-color;
+        }
+
+        &-text {
+            color: avr.$primary-color;
+            font-family: Roboto Condensed;
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 14px;
+            letter-spacing: 8%;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        &-title {
+            color: rgb(22, 23, 34);
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            letter-spacing: -1%;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        &-desc {
+            color: rgb(22, 23, 34);
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            letter-spacing: 0%;
+            line-height: 24px;
+            margin-bottom: 48px;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 1065px){
+    .posts{
+
+        &__cards{
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media only screen and (max-width:860px) {
+    .posts{
+
+        &__cards{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+@media only screen and (max-width:540px){
+    .posts{
+
+        &__cards{
+            grid-template-columns: 1fr;
+        }
+    }
+}
