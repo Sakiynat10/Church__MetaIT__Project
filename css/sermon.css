@@ -1,4 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+@use "../global";
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as avr;
+=======
+>>>>>>> f8b772551320b1500c5fd8479e4a4702bbd26826
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Sen:wght@700&display=swap");
 * {
   margin: 0;
@@ -443,11 +450,15 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   }
 }
 
+<<<<<<< HEAD
 =======
 @use "../global";
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as avr;
 >>>>>>> 5a9e0c8bebe3de762bdf26437566951e82007c3a
+=======
+>>>>>>> e9c0a75b46b5e8113cef575a5da80a69ba94d7ba
+>>>>>>> f8b772551320b1500c5fd8479e4a4702bbd26826
 #sermon-event__main {
   background-color: #f5f2f0;
   padding-top: 208px;
@@ -457,11 +468,19 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   padding-bottom: 128px;
   display: grid;
 <<<<<<< HEAD
+<<<<<<< HEAD
   grid-template-columns: repeat(2, 1fr);
 =======
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
 >>>>>>> 5a9e0c8bebe3de762bdf26437566951e82007c3a
+=======
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+=======
+  grid-template-columns: repeat(2, 1fr);
+>>>>>>> e9c0a75b46b5e8113cef575a5da80a69ba94d7ba
+>>>>>>> f8b772551320b1500c5fd8479e4a4702bbd26826
   grid-gap: 128px;
 }
 #sermon-event__home .sermon-event-home__left {
@@ -584,11 +603,19 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
 @media (max-width: 1115px) {
   #sermon-event__home {
 <<<<<<< HEAD
+<<<<<<< HEAD
     grid-template-columns: repeat(1, 1fr);
 =======
     -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
 >>>>>>> 5a9e0c8bebe3de762bdf26437566951e82007c3a
+=======
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+=======
+    grid-template-columns: repeat(1, 1fr);
+>>>>>>> e9c0a75b46b5e8113cef575a5da80a69ba94d7ba
+>>>>>>> f8b772551320b1500c5fd8479e4a4702bbd26826
     grid-gap: 128px;
   }
 }
