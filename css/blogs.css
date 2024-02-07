@@ -129,8 +129,9 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  -webkit-box-shadow: 1px 5px 10px white;
-          box-shadow: 1px 5px 10px white;
+  z-index: 5;
+  -webkit-box-shadow: 1px 1px 10px white;
+          box-shadow: 1px 1px 10px white;
 }
 nav .navbar {
   display: -webkit-box;
@@ -230,7 +231,17 @@ nav .navbar .navbar__right--btn {
 }
 @media (min-width: 700px) {
   nav .navbar .navbar__right--btn {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #1c1d28;
+    text-decoration: none;
   }
 }
 nav .navbar .navbar__right--btn:hover {
@@ -239,7 +250,6 @@ nav .navbar .navbar__right--btn:hover {
 }
 
 footer {
-  margin-top: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #161722;

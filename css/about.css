@@ -129,8 +129,9 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  -webkit-box-shadow: 1px 5px 10px white;
-          box-shadow: 1px 5px 10px white;
+  z-index: 5;
+  -webkit-box-shadow: 1px 1px 10px white;
+          box-shadow: 1px 1px 10px white;
 }
 nav .navbar {
   display: -webkit-box;
@@ -230,7 +231,17 @@ nav .navbar .navbar__right--btn {
 }
 @media (min-width: 700px) {
   nav .navbar .navbar__right--btn {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #1c1d28;
+    text-decoration: none;
   }
 }
 nav .navbar .navbar__right--btn:hover {
@@ -239,7 +250,6 @@ nav .navbar .navbar__right--btn:hover {
 }
 
 footer {
-  margin-top: 60px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #161722;
@@ -430,4 +440,334 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
     width: 100px;
     right: 100px;
   }
+}
+
+#hero {
+  padding-top: 140px;
+  padding-bottom: 120px;
+}
+#hero .hero__subtitle {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+#hero .hero__title {
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  text-align: left;
+}
+
+#compassion {
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+#compassion .compassion__subtitle {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#compassion .compassion__title {
+  font-size: 42px;
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 400px) {
+  #compassion .compassion__title {
+    font-size: 48px;
+  }
+}
+#compassion .compassion__description {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+#compassion .compassion__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#compassion .compassion__cards .card {
+  overflow: hidden;
+  cursor: pointer;
+  max-width: 310px;
+  height: 460px;
+  width: 100%;
+}
+#compassion .compassion__cards .card .compassion__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: -50px;
+  margin-bottom: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 144px;
+  width: 100%;
+  height: 50px;
+  background-color: #ffd2a4;
+  border-radius: 10px;
+  border: 1px solid #ffd2a4;
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#compassion .compassion__cards .card .compassion__btn:hover {
+  background-color: #FFF5EB;
+}
+#compassion .compassion__cards .card:hover .compassion__btn {
+  margin-top: 0px;
+}
+#compassion .compassion__cards .card:hover img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+#compassion .compassion__cards .card img {
+  width: 100%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+#compassion .compassion__infos {
+  margin-top: 50px;
+}
+#compassion .compassion__infos .info__subtitle {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#compassion .compassion__infos .info__title {
+  font-family: Roboto Condensed;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  margin-bottom: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#compassion .compassion__infos .info__text {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  max-width: 500px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+#compassion .compassion__infos a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #1c1d28;
+  gap: 10px;
+}
+
+#benefit {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#benefit .benefit__subtitle {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+#benefit .benefit__title {
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  max-width: 430px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#benefit .benefit__cards {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+@media (min-width: 800px) {
+  #benefit .benefit__cards {
+    grid-template-columns: 50% 50%;
+  }
+}
+#benefit .benefit__cards .card__info {
+  padding: 50px 10px;
+  margin-top: 30px;
+}
+#benefit .benefit__cards .card__info .card__title {
+  font-family: Roboto Condensed;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+#benefit .benefit__cards .card__info .card__subtitle {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#benefit .benefit__cards .card__img img {
+  width: 100%;
+}
+
+#team {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#team .team__subtitle {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#team .team__title {
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -0.01em;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  text-align: center;
+}
+#team .team__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#team .team__cards .card {
+  max-width: 300px;
+  width: 100%;
+  background-color: #F5F2F0;
+  text-align: center;
+  padding: 40px 20px;
+}
+#team .team__cards .card .card__title {
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+#team .team__cards .card .card__subtitle {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+}
+#team .team__cards .card .card__medias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+#team .team__cards .card .card__medias img {
+  cursor: pointer;
+  width: 24px;
 }
