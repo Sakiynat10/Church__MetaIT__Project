@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 @use "../global";
 @use "../utils/mixin" as mxn;
@@ -459,6 +460,11 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
 =======
 >>>>>>> e9c0a75b46b5e8113cef575a5da80a69ba94d7ba
 >>>>>>> f8b772551320b1500c5fd8479e4a4702bbd26826
+=======
+@use "../global";
+@use "../utils/mixin" as mxn;
+@use "../utils/variables" as avr;
+>>>>>>> 29f3d88ec23f0d0aacb9787d2156dc0dff888eba
 #sermon-event__main {
   background-color: #f5f2f0;
   padding-top: 208px;
@@ -466,7 +472,9 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
 
 #sermon-event__home {
   padding-bottom: 128px;
+  display: -ms-grid;
   display: grid;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
   grid-template-columns: repeat(2, 1fr);
@@ -481,8 +489,13 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   grid-template-columns: repeat(2, 1fr);
 >>>>>>> e9c0a75b46b5e8113cef575a5da80a69ba94d7ba
 >>>>>>> f8b772551320b1500c5fd8479e4a4702bbd26826
+=======
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+>>>>>>> 29f3d88ec23f0d0aacb9787d2156dc0dff888eba
   grid-gap: 128px;
 }
+
 #sermon-event__home .sermon-event-home__left {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -492,9 +505,11 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 #sermon-event__home .sermon-event-home__left * {
   max-width: 100%;
 }
+
 #sermon-event__home .sermon-event-home__left a {
   background: linear-gradient(109.61deg, #a54e2b -53.83%, #dc9853 62.61%);
   -webkit-background-clip: text;
@@ -505,6 +520,7 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   font-size: 12px;
   line-height: 14px;
 }
+
 #sermon-event__home .sermon-event-home__left h1 {
   font-weight: 700;
   font-size: 48px;
@@ -512,6 +528,7 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   color: #161722;
   margin-bottom: 16px;
 }
+
 #sermon-event__home .sermon-event-home__left p {
   margin-bottom: 30px;
   font-weight: 400;
@@ -519,6 +536,7 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   line-height: 24px;
   color: #161722;
 }
+
 #sermon-event__home .sermon-event-home__left h4 {
   margin-bottom: 30px;
   font-weight: 400;
@@ -528,24 +546,28 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   padding-left: 19px;
   border-left: 3px solid #ffd2a4;
 }
+
 #sermon-event__home .sermon-event-home__left span {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #161722;
 }
+
 #sermon-event__home .sermon-event-home__right {
   width: 100%;
   background-color: #ffffff;
   height: 414px;
   padding: 40px;
 }
+
 #sermon-event__home .sermon-event-home__right .ser-event-reg {
   margin-bottom: 32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
+
 #sermon-event__home .sermon-event-home__right .ser-event-reg p {
   margin-right: 20px;
   display: -webkit-box;
@@ -559,9 +581,11 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   line-height: 24px;
   color: #161722;
 }
+
 #sermon-event__home .sermon-event-home__right .ser-event-reg img {
   margin-right: 8px;
 }
+
 #sermon-event__home .sermon-event-home__right form .seRow1 {
   margin-bottom: 32px;
   display: -webkit-box;
@@ -574,6 +598,7 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   padding-bottom: 8px;
   border-bottom: 1px solid #161722;
 }
+
 #sermon-event__home .sermon-event-home__right form .seRow1 label {
   font-weight: 500;
   font-size: 12px;
@@ -581,10 +606,12 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   color: #161722;
   margin-bottom: 12px;
 }
+
 #sermon-event__home .sermon-event-home__right form .seRow1 input {
   border: none;
   outline: none;
 }
+
 #sermon-event__home .sermon-event-home__right form button {
   width: 227px;
   height: 64px;
@@ -596,12 +623,14 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   font-size: 16px;
   font-family: Roboto Condensed;
 }
+
 #sermon-event__home .sermon-event-home__right form button :hover {
   color: white;
 }
 
 @media (max-width: 1115px) {
   #sermon-event__home {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     grid-template-columns: repeat(1, 1fr);
@@ -616,6 +645,10 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
     grid-template-columns: repeat(1, 1fr);
 >>>>>>> e9c0a75b46b5e8113cef575a5da80a69ba94d7ba
 >>>>>>> f8b772551320b1500c5fd8479e4a4702bbd26826
+=======
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+>>>>>>> 29f3d88ec23f0d0aacb9787d2156dc0dff888eba
     grid-gap: 128px;
   }
 }
