@@ -1,0 +1,731 @@
+@use "../global";
+@use "../utils/mixin"as mxn;
+@use "../utils/variables"as var;
+
+/*Hero Section*/
+#hero {
+    margin-top: 80px;
+    padding-top: 140px;
+    padding-bottom: 130px;
+
+    .hero__title {
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19px;
+        margin-bottom: 20px;
+        letter-spacing: 0em;
+        color: var.$white-color;
+    }
+
+    .hero__subtitle {
+        font-family: Roboto Condensed;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 82px;
+        letter-spacing: -0.01em;
+        text-align: left;
+        color: var.$white-color;
+        max-width: 502px;
+        width: 100%;
+        margin-bottom: 40px;
+
+        @media(min-width:500px) {
+            font-size: 64px;
+        }
+    }
+
+    .hero__btn {
+        max-width: 214px;
+        width: 100%;
+        height: 50px;
+        border-radius: 10px;
+        background-color: var.$primary-color;
+        border: 1px solid var.$primary-color;
+        border: none;
+        margin-bottom: 40px;
+
+        &:hover {
+            background-color: var.$hover-color;
+        }
+    }
+
+    .low__title {
+        display: flex;
+        align-items: start;
+        gap: 5px;
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: var.$white-color;
+        max-width: 300px;
+        width: 100%;
+
+        .line1 {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 10px;
+            height: 2px;
+            border-radius: 2px;
+            width: 30px;
+            background-color: var.$primary-color;
+        }
+    }
+
+}
+
+#relevant {
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    .relevant__subtitle {
+        font-family: Roboto Condensed;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+
+    .relevant__title {
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.01em;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .relevant__cards {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .card {
+            max-width: 380px;
+            width: 100%;
+            // background-color: ;
+            ;
+            background: linear-gradient(to bottom, #FFF5EB 95%, var.$primary-color 5%);
+
+            padding: 70px 80px;
+
+            img {
+                width: 44px;
+                height: 44px;
+                background-color: var.$primary-color;
+                padding: 10px;
+                border-radius: 50px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+
+            .card__info {
+                .card__title {
+                    font-family: Roboto Condensed;
+                    font-size: 32px;
+                    font-weight: 700;
+                    line-height: 44px;
+                    letter-spacing: -0.01em;
+                    margin-bottom: 10px;
+                    text-align: left;
+                    text-transform: uppercase;
+                }
+
+                .card__subtitle {
+                    font-family: Roboto Condensed;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+
+                }
+            }
+        }
+    }
+}
+
+#compassion {
+    padding-top: 60px;
+    padding-bottom: 90px;
+
+    .compassion__subtitle {
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .compassion__title {
+        font-size: 42px;
+        font-family: Roboto Condensed;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.01em;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media(min-width:400px) {
+            font-size: 48px;
+        }
+    }
+
+    .compassion__description {
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .compassion__cards {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        .card {
+            overflow: hidden;
+            cursor: pointer;
+
+            .compassion__btn {
+                display: flex;
+                margin-top: -50px;
+                margin-bottom: 10px;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 144px;
+                width: 100%;
+                height: 50px;
+                background-color: var.$primary-color;
+                border-radius: 10px;
+                border: 1px solid var.$primary-color;
+                font-family: Roboto Condensed;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 16px;
+                letter-spacing: 0em;
+                text-align: center;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: var.$hover-color;
+                }
+            }
+
+            max-width: 310px;
+            height: 460px;
+            width: 100%;
+
+            &:hover {
+                .compassion__btn {
+                    margin-top: 0px;
+                }
+
+                img {
+                    transform: scale(1);
+                }
+            }
+
+            img {
+                width: 100%;
+                transform: scale(0.9);
+                transition: 0.5s;
+            }
+        }
+    }
+
+    .compassion__infos {
+        margin-top: 50px;
+
+        .info__subtitle {
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 0em;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .info__title {
+            font-family: Roboto Condensed;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 44px;
+            letter-spacing: -0.01em;
+            margin-bottom: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .info__text {
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: center;
+            max-width: 500px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-transform: capitalize;
+            text-decoration: none;
+            color: var.$black-color;
+            gap: 10px;
+        }
+    }
+
+}
+
+#benefit {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .benefit__subtitle {
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .benefit__title {
+        font-family: Roboto Condensed;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 432px;
+        width: 100%;
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.01em;
+        margin-bottom: 30px;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media(min-width:500px) {
+            font-size: 48px;
+        }
+    }
+
+    .benefit__cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(min-width:500px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media(min-width:800px) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .card {
+            max-width: 380px;
+            width: 100%;
+            position: relative;
+
+            img {
+                width: 100%;
+            }
+
+            .overlay__text {
+                position: absolute;
+                bottom: 40px;
+                left: 40px;
+
+                h2 {
+                    font-family: Roboto Condensed;
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28px;
+                    letter-spacing: -0.01em;
+                    text-align: left;
+                    color: var.$white-color;
+                }
+
+                p {
+                    font-family: Roboto Condensed;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    color: var.$white-color;
+                }
+            }
+        }
+    }
+}
+
+#upcoming {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .upcoming__subtitle {
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .upcoming__title {
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.01em;
+        max-width: 554px;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .upcoming__card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+
+        @media(min-width:800px) {
+            display: grid;
+            grid-template-columns: 30% 70%;
+            gap: 0;
+        }
+
+        .card__infos {
+            max-width: 400px;
+            background-color: var.$hover-color;
+            width: 100%;
+            padding: 55px 20px;
+
+            .info__subtitle {
+                display: flex;
+                align-items: end;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                h3 {
+                    font-family: Roboto Condensed;
+                    font-size: 12px;
+                    font-weight: 700;
+                    line-height: 14px;
+                    letter-spacing: 0.08em;
+                    text-align: left;
+                    color: var.$primary-color;
+                    text-transform: uppercase;
+                }
+
+                h1 {
+                    display: flex;
+                    flex-direction: column;
+                    font-family: Roboto Condensed;
+
+                    .text {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 19px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                    }
+
+                    .number {
+                        font-family: Roboto Condensed;
+                        font-size: 24px;
+                        font-weight: 700;
+                        line-height: 28px;
+                        letter-spacing: -0.01em;
+                        text-align: left;
+
+                    }
+
+                }
+            }
+
+            .info__title {
+                font-family: Roboto Condensed;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                max-width: 210px;
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .info__description {
+                font-family: Roboto Condensed;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            .card__clock {
+                display: flex;
+                align-items: start;
+                justify-content: start;
+                margin-bottom: 20px;
+                gap: 20px;
+
+                p {
+                    font-family: Roboto Condensed;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    max-width: 210px;
+                    width: 100%;
+                }
+
+            }
+
+            .register__btn {
+                max-width: 200px;
+                width: 100%;
+                height: 50px;
+                background-color: var.$secondary-color;
+                color: var.$primary-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 10px;
+
+                &:hover {
+                    border-color: var.$secondary-color;
+                    background-color: var.$white-color;
+                }
+            }
+
+        }
+
+        .card__img {
+            max-width: 880px;
+            width: 100%;
+
+            img {
+                width: 100%;
+
+                @media(min-width:800px) {
+                    height: 500px;
+                }
+            }
+
+
+        }
+    }
+
+    .more__info {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        margin-top: 30px;
+        gap: 20px;
+        text-decoration: none;
+
+        p {
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 32px;
+            letter-spacing: 0px;
+            text-align: left;
+            text-decoration: none;
+            color: var.$black-color;
+        }
+    }
+}
+
+#serve {
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .serve__container {
+        background-color: var.$white-color;
+        padding: 80px 70px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+
+        .serve__title {
+            font-family: Roboto Condensed;
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 64px;
+            letter-spacing: -0.01em;
+            text-align: left;
+            max-width: 308px;
+            width: 100%;
+        }
+
+        .serve__subtitle {
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+            text-align: left;
+            max-width: 280px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .serve__btn {
+            max-width: 164px;
+            width: 100%;
+            background-color: var.$primary-color;
+            border: none;
+            border-radius: 10px;
+            height: 50px;
+        }
+    }
+}
+
+#blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .blog__subtitle {
+        font-family: Roboto Condensed;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        letter-spacing: 0em;
+        margin-bottom: 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .blog__title {
+        font-family: Roboto Condensed;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 64px;
+        letter-spacing: -0.01em;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .blog__cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        .card {
+            background: linear-gradient(to bottom , var.$hover-color 95% , var.$primary-color 5%);
+            max-width: 290px;
+            width: 100%;
+            padding: 60px 30px;
+
+            .card__subtitle {
+                font-family: Roboto Condensed;
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 16px;
+                letter-spacing: 0.08em;
+                margin-bottom: 15px;
+                color: var.$primary-color;
+                text-align: left;
+                text-transform: uppercase;
+            }
+
+            .card__title {
+                font-family: Roboto Condensed;
+                font-size: 24px;
+                font-weight: 700;
+                line-height: 28px;
+                letter-spacing: -0.01em;
+                text-align: left;
+                max-width: 218px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .card__description {
+                font-family: Roboto Condensed;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+                max-width: 230px;
+                width: 100%;
+                margin-bottom: 40px;
+            }
+
+            .card__date {
+                padding-bottom: 20px;
+                .date__name {
+                    font-family: Roboto Condensed;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+
+                .date__time {
+                    font-family: Roboto Condensed;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
