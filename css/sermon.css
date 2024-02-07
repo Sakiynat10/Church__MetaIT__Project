@@ -1,7 +1,6 @@
 @use "../global";
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as avr;
-
 #sermon-event__main {
   background-color: #f5f2f0;
   padding-top: 208px;
@@ -12,7 +11,7 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
   grid-gap: 128px;
 }
 
@@ -22,8 +21,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #sermon-event__home .sermon-event-home__left * {
@@ -94,8 +93,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -113,8 +112,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-bottom: 8px;
   border-bottom: 1px solid #161722;
 }
@@ -151,7 +150,7 @@
 @media (max-width: 1115px) {
   #sermon-event__home {
     -ms-grid-columns: (1fr)[1];
-    grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     grid-gap: 128px;
   }
 }

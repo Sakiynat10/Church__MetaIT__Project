@@ -2,7 +2,7 @@
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as avr;
 #backround {
-  background-image: url(../../assets/sermons/sermons-main-bg.png);
+  background-image: url(../../assets/image/sermons-images/sermons-background.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -284,8 +284,8 @@
   background-color: #ffd0a0;
   width: 100%;
   bottom: 0;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
   left: 0;
 }
 
