@@ -1,3 +1,33 @@
 @use "../global";
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as avr;
+
+#zero {
+  padding-top: 140px;
+  padding-bottom: 120px;
+
+  background: url(../assets/image/contact-images/contact-images.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .hero__subtitle {
+    font-family: Roboto Condensed;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .hero__title {
+    font-family: Roboto Condensed;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: -0.01em;
+    text-align: left;
+  }
+}
