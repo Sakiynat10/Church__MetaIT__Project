@@ -2,7 +2,7 @@
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as avr;
 #backround {
-  background-image: url(../../assets/image/sermons-images/sermons-background.png);
+  background-image: url(/assets/image/sermons-images/sermons-background.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
