@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    a{
+        text-decoration: none;
+    }
+}
+
+main{
+    flex: 1;
+}

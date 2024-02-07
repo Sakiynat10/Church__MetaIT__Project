@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-@use "../global";
-@use "../utils/mixin" as mxn;
-@use "../utils/variables" as avr;
-=======
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Sen:wght@700&display=swap");
 * {
   margin: 0;
@@ -776,4 +771,3 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   cursor: pointer;
   width: 24px;
 }
->>>>>>> 7c0e2c82cf0a47a4f0bf84870d153a3718f9710d
