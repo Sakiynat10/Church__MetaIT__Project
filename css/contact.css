@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 6dafbf69681977614b6a3211c51abaaaef14a957
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Sen:wght@700&display=swap");
 * {
   margin: 0;
@@ -444,36 +440,135 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
     width: 100px;
     right: 100px;
   }
-<<<<<<< HEAD
 }
 
-#zero {
+body {
+  background-color: #F5F2F0;
+}
+
+#contact__header {
   padding-top: 140px;
   padding-bottom: 120px;
-  background: url(../assets/image/contact-images/contact-images.png);
+  height: 485px;
+  background: url(/assets/image/contact-images/contact-images.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-#zero .hero__subtitle {
+#contact__header .contact__subtitle {
+  color: #ffd2a4;
   font-family: Roboto Condensed;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
-  text-align: left;
   margin-top: 30px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
-#zero .hero__title {
+#contact__header .contact__title {
+  color: #ffffff;
   font-family: Roboto Condensed;
   font-size: 48px;
   font-weight: 700;
   line-height: 64px;
   letter-spacing: -0.01em;
-  text-align: left;
 }
 
-=======
+#contact__infos .contact__infos__form .form__title {
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin-top: 30px;
+  margin-bottom: 32px;
 }
->>>>>>> 6dafbf69681977614b6a3211c51abaaaef14a957
+#contact__infos .contact__infos__form .form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+#contact__infos .contact__infos__form .form__inputs input {
+  height: 64px;
+  padding-left: 20px;
+  border: none;
+  background-color: white;
+}
+#contact__infos .contact__infos__form .form__inputs input::-webkit-input-placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs input::-moz-placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs input:-ms-input-placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs input::-ms-input-placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs input::placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs textarea {
+  padding: 20px;
+}
+#contact__infos .contact__infos__form .form__inputs textarea::-webkit-input-placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs textarea::-moz-placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs textarea:-ms-input-placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs textarea::-ms-input-placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+#contact__infos .contact__infos__form .form__inputs textarea::placeholder {
+  font-family: Roboto Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
