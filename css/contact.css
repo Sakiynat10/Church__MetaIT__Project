@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6dafbf69681977614b6a3211c51abaaaef14a957
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Sen:wght@700&display=swap");
 * {
   margin: 0;
@@ -441,6 +444,7 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
     width: 100px;
     right: 100px;
   }
+<<<<<<< HEAD
 }
 
 #zero {
@@ -470,3 +474,6 @@ footer .footer__container .footer__right__infos .right__input .input__btn {
   text-align: left;
 }
 
+=======
+}
+>>>>>>> 6dafbf69681977614b6a3211c51abaaaef14a957
