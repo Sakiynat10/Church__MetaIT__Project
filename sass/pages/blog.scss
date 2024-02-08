@@ -96,6 +96,10 @@ main {
             &-right {
                 text-align: center;
             }
+            &-btn{
+                padding: 16px 20px;
+                font-size: 14px;
+            }
         }
     }
 }
@@ -106,6 +110,8 @@ main {
         &__title {
             font-size: 32px;
             margin-bottom: 38px;
+            line-height: 32px;
+            text-align: center;
         }
 
         &__wrapper {
@@ -211,6 +217,11 @@ main {
 }
 @media only screen and (max-width:540px){
     .posts{
+
+        &__title{
+            font-size: 32px;
+            text-align: center;
+        }
 
         &__cards{
             grid-template-columns: 1fr;
