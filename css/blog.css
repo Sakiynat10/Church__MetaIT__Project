@@ -534,6 +534,7 @@ main {
   line-height: 16px;
   text-transform: uppercase;
   background-color: #ffd2a4;
+  cursor: pointer;
   color: #1c1d28;
 }
 .blog__wrapper-btn:hover {
@@ -579,11 +580,17 @@ main {
   .blog__wrapper-right {
     text-align: center;
   }
+  .blog__wrapper-btn {
+    padding: 16px 20px;
+    font-size: 14px;
+  }
 }
 @media only screen and (max-width: 650px) {
   .blog__title {
     font-size: 32px;
     margin-bottom: 38px;
+    line-height: 32px;
+    text-align: center;
   }
   .blog__wrapper-title {
     font-size: 24px;
@@ -678,6 +685,10 @@ main {
   }
 }
 @media only screen and (max-width: 540px) {
+  .posts__title {
+    font-size: 32px;
+    text-align: center;
+  }
   .posts__cards {
     grid-template-columns: 1fr;
   }
