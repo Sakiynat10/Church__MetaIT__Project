@@ -460,7 +460,7 @@ main {
   padding-top: 140px;
   padding-bottom: 120px;
   height: 485px;
-  background: url(/assets/image/contact-images/contact-images.png);
+  background: url(../assets/image/contact-images/contact-images.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -484,16 +484,12 @@ main {
   letter-spacing: -0.01em;
 }
 
-<<<<<<< HEAD
-#contact__infos .contact__infos__form .form__title {
-=======
 #contact__infos .contact__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 50px;
 }
 #contact__infos .contact__container .contact__infos__form .form__title {
->>>>>>> 326f8ad17de85419536ab73cfae75634c83c94b9
   font-family: Roboto Condensed;
   font-size: 24px;
   font-weight: 700;
@@ -593,11 +589,14 @@ main {
   line-height: 24px;
   letter-spacing: 0em;
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 >>>>>>> e0990c224d48a83bb1096c836bc0e3e0d6c4d57e
 =======
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 9f4a3938e5e6ab5223827a062fd5d86f9ab4c7b6
 }
 #contact__infos .contact__container .contact__infos__form .form__inputs .form__btn {
   display: inline-block;
@@ -682,6 +681,10 @@ main {
   #contact__infos .contact__container {
     grid-template-columns: 1fr;
   }
+<<<<<<< HEAD
 >>>>>>> 326f8ad17de85419536ab73cfae75634c83c94b9
 }
 >>>>>>> 7e0b7626c0de43320284fb1702ea208af5316411
+=======
+}
+>>>>>>> 9f4a3938e5e6ab5223827a062fd5d86f9ab4c7b6
