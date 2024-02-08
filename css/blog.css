@@ -534,6 +534,7 @@ main {
   line-height: 16px;
   text-transform: uppercase;
   background-color: #ffd2a4;
+  cursor: pointer;
   color: #1c1d28;
 }
 .blog__wrapper-btn:hover {

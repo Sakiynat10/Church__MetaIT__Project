@@ -7,6 +7,68 @@
     <link rel="stylesheet" href="../css/contact.min.css" />
   </head>
   <body>
+    <div class="toggle__header">
+      <img
+        class="close__toggle"
+        src="../assets/image/home-images/close.svg"
+        alt="close svg"
+      />
+      <img src="../assets/image/home-images/headerlogo.svg" alt="logo" />
+      <ul class="toggle__menu">
+        <li>
+          <a href="../index.html">home</a>
+        </li>
+        <li>
+          <a href="./about.html">about us</a>
+        </li>
+        <li>
+          <a href="./sermon.html">sermon</a>
+        </li>
+        <li>
+          <a href="./blog.html">blog</a>
+        </li>
+        <li>
+          <a href="./contact">contact</a>
+        </li>
+      </ul>
+    </div>
+    <!------------------ Header Section--------------------->
+    <header>
+      <nav>
+        <div class="container">
+          <div class="navbar">
+            <div class="navbar__left">
+              <img
+                src="../assets/image/home-images/headerlogo.svg"
+                alt="logo svg"
+              />
+              <button class="toggle">
+                <img src="../assets/image/home-images/menu.svg" alt="" />
+              </button>
+              <span class="line__header"></span>
+              <ul class="navbar__left--menu">
+                <li>
+                  <a href="../index.html">Home</a>
+                </li>
+                <li>
+                  <a href="../pages/about.html">About us</a>
+                </li>
+                <li>
+                  <a href="../pages/sermon.html">Sermon</a>
+                </li>
+                <li>
+                  <a href="../pages/blog.html">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <a href="../pages/contact.html" class="navbar__right--btn"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!------------------ /Header Section--------------------->
     <!-- main -->
     <main>
       <section id="contact__header">
@@ -19,19 +81,158 @@
         </div>
       </section>
       <section id="contact__infos">
-        <div class="container">
+        <div class="container contact__container">
           <div class="contact__infos__form">
             <h5 class="form__title">Contact form:</h5>
             <div class="form__inputs">
               <input type="text" placeholder="Your full Name" />
               <input type="text" placeholder="Your Email" />
               <input type="text" placeholder="Query Related" />
-              <textarea name="" id="" cols="30" rows="10" placeholder="Massage"></textarea>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Massage"
+              ></textarea>
+              <button class="form__btn">SEND MASSAGE</button>
             </div>
           </div>
-          <div class="contact__infos__info"></div>
+          <div class="contact__infos__info">
+            <div class="infos__box">
+              <div class="info">
+                <div class="info__subtitle">Address</div>
+                <div class="info__title">
+                  NH 234 Public Square <br />
+                  San Francisco 65368
+                </div>
+              </div>
+              <div class="info">
+                <div class="info__subtitle">Contact Details</div>
+                <div class="info__title">(480) 555-0103</div>
+                <div class="info__title">finsweet@example.com</div>
+              </div>
+              <div class="info">
+                <div class="info__subtitle">Find us here</div>
+                <div class="info__icons">
+                  <svg
+                    width="25"
+                    height="26"
+                    viewBox="0 0 25 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_65_1406)">
+                      <path
+                        d="M25 13C25 5.82029 19.4036 0 12.5 0C5.59644 0 0 5.82029 0 13C0 19.4886 4.57104 24.8668 10.5469 25.8421V16.7578H7.37305V13H10.5469V10.1359C10.5469 6.87781 12.4131 5.07812 15.2683 5.07812C16.6355 5.07812 18.0664 5.33203 18.0664 5.33203V8.53125H16.4902C14.9375 8.53125 14.4531 9.53342 14.4531 10.5625V13H17.9199L17.3657 16.7578H14.4531V25.8421C20.429 24.8668 25 19.4886 25 13Z"
+                        fill="#161722"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_65_1406">
+                        <rect width="25" height="26" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <svg
+                    width="26"
+                    height="22"
+                    viewBox="0 0 26 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M8.17934 21.5625C17.9882 21.5625 23.3548 13.434 23.3548 6.38708C23.3548 6.15856 23.3497 5.92497 23.3396 5.69645C24.3835 4.94148 25.2845 4.00634 26 2.93497C25.0277 3.36754 23.9954 3.65006 22.9384 3.77286C24.0514 3.10571 24.8847 2.05766 25.284 0.822975C24.2369 1.4435 23.0919 1.88122 21.8979 2.11739C21.0934 1.26259 20.0297 0.696604 18.8713 0.50695C17.7129 0.317296 16.5243 0.514532 15.4892 1.06817C14.4541 1.6218 13.6303 2.50099 13.145 3.56982C12.6597 4.63864 12.54 5.83756 12.8045 6.98122C10.6844 6.87483 8.61026 6.32407 6.71665 5.36467C4.82303 4.40526 3.15217 3.05862 1.81238 1.41204C1.13143 2.58607 0.923061 3.97534 1.22962 5.29749C1.53617 6.61964 2.33465 7.77546 3.46277 8.53005C2.61585 8.50316 1.78747 8.27513 1.04609 7.86481V7.93083C1.04534 9.16289 1.47127 10.3572 2.2515 11.3107C3.03173 12.2643 4.1181 12.9182 5.32594 13.1613C4.54139 13.376 3.71798 13.4072 2.91941 13.2527C3.26024 14.3123 3.92337 15.239 4.81625 15.9036C5.70913 16.5682 6.78721 16.9374 7.90004 16.9597C6.01079 18.4438 3.67702 19.2487 1.27461 19.2449C0.848561 19.2442 0.422932 19.2181 0 19.1667C2.44059 20.7325 5.27966 21.5641 8.17934 21.5625Z"
+                      fill="#161722"
+                    />
+                  </svg>
+                  <svg
+                    width="25"
+                    height="26"
+                    viewBox="0 0 25 26"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.1494 0H1.8457C0.825195 0 0 0.837891 0 1.87383V24.1211C0 25.157 0.825195 26 1.8457 26H23.1494C24.1699 26 25 25.157 25 24.1262V1.87383C25 0.837891 24.1699 0 23.1494 0ZM7.41699 22.1559H3.70605V9.74492H7.41699V22.1559ZM5.56152 8.05391C4.37012 8.05391 3.4082 7.05352 3.4082 5.81953C3.4082 4.58555 4.37012 3.58516 5.56152 3.58516C6.74805 3.58516 7.70996 4.58555 7.70996 5.81953C7.70996 7.04844 6.74805 8.05391 5.56152 8.05391ZM21.3037 22.1559H17.5977V16.123C17.5977 14.6859 17.5732 12.8324 15.6689 12.8324C13.7402 12.8324 13.4473 14.4016 13.4473 16.0215V22.1559H9.74609V9.74492H13.3008V11.441H13.3496C13.8428 10.466 15.0537 9.43516 16.8555 9.43516C20.6104 9.43516 21.3037 12.0047 21.3037 15.3461V22.1559Z"
+                      fill="#161722"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+    <!------------------ /Main--------------------->
+    <!------------------ Footer Section--------------------->
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__left">
+          <div class="footer__left__col1">
+            <img
+              src="../assets/image/home-images/footer.logo.svg"
+              alt="footer logo"
+            />
+            <p class="left--title">© Copyright Finsweet 2022</p>
+            <ul class="left--infos">
+              <li>
+                <p>(480) 555-0103</p>
+              </li>
+              <li>
+                <p>4517 Washington Ave.</p>
+              </li>
+              <li>
+                <p>finsweet@example.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__left__col2">
+            <p class="footer__left__right--title">Quicklinks</p>
+            <ul>
+              <li>
+                <a href="../pages/about.html">About us</a>
+              </li>
+              <li>
+                <a href="../pages/sermons.html">Sermons</a>
+              </li>
+              <li>
+                <a href="../pages/about.html">Events</a>
+              </li>
+              <li>
+                <a href="../pages/blog.html">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__right__medias">
+            <p class="media__title">Connect</p>
+            <div class="media">
+              <a href="https//asilbekxoliyorov.com">
+                <img src="../assets/image/home-images/facebook.svg" alt="" />
+              </a>
+              <a href="https//asilbekxoliyorov.com">
+                <img src="../assets/image/home-images/twitter.svg" alt="" />
+              </a>
+              <a href="https//asilbekxoliyorov.com">
+                <img src="../assets/image/home-images/linkedin.svg" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__right__infos">
+            <h1 class="right__title">
+              Subscribe to get Latest Updates and News
+            </h1>
+            <div class="right__input">
+              <input placeholder="Yourmail@gmail.com" type="email" />
+              <button class="input__btn">subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!------------------ /Footer Section--------------------->
   </body>
 </html>

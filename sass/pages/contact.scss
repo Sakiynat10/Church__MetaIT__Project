@@ -2,9 +2,15 @@
 @use "../utils/mixin" as mxn;
 @use "../utils/variables" as var;
 
-body{
-  background-color: #F5F2F0;
+body {
+  background-color: var.$body-bg-color;
 }
+
+main {
+  margin-top: 80px;
+  margin-bottom: 128px;
+}
+
 #contact__header {
   padding-top: 140px;
   padding-bottom: 120px;
@@ -35,44 +41,106 @@ body{
   }
 }
 #contact__infos {
-  .contact__infos__form {
-    .form__title {
-      font-family: Roboto Condensed;
-      font-size: 24px;
-      font-weight: 700;
-      line-height: 29px;
-      letter-spacing: 0em;
-      margin-top: 30px;
-      margin-bottom: 32px;
-    }
-    .form__inputs {
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-      input {
-        height: 64px;
-        padding-left: 20px;
-        border: none;
-        background-color: white;
-        &::placeholder {
-          font-family: Roboto Condensed;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
-          letter-spacing: 0em;
+  .contact__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    .contact__infos__form {
+      .form__title {
+        font-family: Roboto Condensed;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+        letter-spacing: 0em;
+        margin-top: 30px;
+        margin-bottom: 32px;
+      }
+      .form__inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        input {
+          height: 64px;
+          padding-left: 20px;
+          border: none;
+          background-color: white;
+          &::placeholder {
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+          }
+        }
+        textarea {
+          padding: 20px;
+          border: none;
+          height: 120px;
+          &::placeholder {
+            font-family: Roboto Condensed;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0em;
+          }
+        }
+        .form__btn {
+          @include mxn.btn();
         }
       }
-      textarea {
-        padding: 20px;
-        &::placeholder {
-          font-family: Roboto Condensed;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 24px;
-          letter-spacing: 0em;
+    }
+    .contact__infos__info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .infos__box {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+          .info__subtitle {
+            color: #1e1b1b;
+            font-family: Roboto Condensed;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 21px;
+            letter-spacing: 0em;
+          }
+          .info__title {
+            color: var.$secondary-color;
+            font-family: Roboto Condensed;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+          }
+          .info__icons {
+            display: flex;
+            gap: 32px;
+            cursor: pointer;
+            svg {
+              path {
+                transition: all 0.2s linear;
+              }
+              &:hover {
+                path {
+                  fill: var.$primary-color;
+                }
+              }
+            }
+          }
         }
       }
     }
   }
 }
 
+@media screen and (max-width: 900px) {
+  #contact__infos {
+    .contact__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
