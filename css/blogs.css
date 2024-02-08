@@ -462,3 +462,130 @@ main {
       -ms-flex: 1;
           flex: 1;
 }
+
+main {
+  background: rgb(229, 229, 229);
+}
+
+.compassion {
+  margin-top: 80px;
+  padding: 128px 0;
+}
+.compassion__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.compassion__text {
+  color: #A54E2B;
+  font-family: Roboto Condensed;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 8%;
+  margin-bottom: 16px;
+}
+.compassion__title {
+  color: #1c1d28;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.compassion__date {
+  color: #1c1d28;
+  font-family: Roboto Condensed;
+  line-height: 24px;
+  margin-bottom: 64px;
+}
+.compassion__img {
+  width: 100%;
+}
+.compassion__wrapper {
+  max-width: 768px;
+  widows: 100%;
+  margin-top: 64px;
+}
+.compassion__wrapper-title {
+  color: #1c1d28;
+  font-family: Roboto Condensed;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 64px;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.compassion__wrapper-text {
+  color: #1c1d28;
+  font-family: Roboto Condensed;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+.compassion__wrapper-img {
+  width: 100%;
+}
+.compassion__wrapper--title {
+  margin: 24px 0;
+  color: #1c1d28;
+  font-family: Roboto Condensed;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: -1%;
+  text-transform: uppercase;
+}
+.compassion__wrapper-desc {
+  width: 100%;
+  padding: 0 27px;
+  border-left: 3px solid #ffd2a4;
+  color: #1c1d28;
+  font-family: Roboto Condensed;
+  font-size: 24px;
+  line-height: 150%;
+  margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 735px) {
+  .compassion {
+    padding: 60px 0;
+  }
+  .compassion__title {
+    font-size: 36px;
+    line-height: 48px;
+    text-align: center;
+  }
+  .compassion__date {
+    margin-bottom: 32px;
+  }
+  .compassion__wrapper {
+    max-width: 520px;
+  }
+  .compassion__wrapper-title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .compassion__wrapper-text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .compassion__wrapper--title {
+    margin-top: 18px 0;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .compassion__wrapper-desc {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+}
